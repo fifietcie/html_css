@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Segoeui";
+  /* creation d'un alias/raccourci  */
+  src: url(../font/SEGOEUI.TTF);
+}
+
+img {
+  width: 100%;
+}
+
+#check {
+  display: none;
+}
+/* cache la checkbox */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoeui", serif;
+  box-sizing: border-box;
+}
+
+#logo {
+  color: black;
+  padding: 1rem;
+  /* letter-spacing: 0.3rem; */
+  font-weight: 360;
+}
+
+#logo span {
+  font-weight: 900;
+  margin: 0.3rem;
+}
+
+.ma-bars {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+
+#check:checked ~ ul {
+  display: flex;
+}
+/* les : permettent de detecter l'etat du composant  */
+
+nav {
+  display: flex;
+  /* Pour gerer l'allignement vertical des enfants de ma div j'utilise align-items  */
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  /* le fixed permet de garder la barre de nav fix quand on scroll */
+  z-index:1 ;
+  /* permet de superposer les layers mais ne fonctionne pas avec une position statique (par defaut) */
+  width: 100%;
+  height: 55px;
+  top: 0;
+}
+
+#titre {
+  color: white;
+  font-size: 1, 5rem;
+  letter-spacing: 0, 7rem;
+  /* word-spacing: 2rem; */
+}
+
+.titre {
+  background-color: rgba(0, 0, 0, 0.705);
+  margin: 1rem;
+  font-weight: 900;
+}
+.archi {
+  display: none;
+}
+
+nav ul {
+  /* display: flex; : a été mis dans #check */
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.791);
+  top: 7.2vh;
+  right: 0;
+  flex-direction: column;
+  border-radius: 0.6rem;
+}
+
+nav li {
+  padding: 15px;
+}
+
+#img-br {
+  background-image: url(../img/architect.jpg);
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+}
+
+h2 {
+  font-weight: 100;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.349);
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+#projects, #about{
+  position: relative;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+
+#gallery span {
+  background-color: black;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  font-size: 1.3rem;
+}
+
+#gallery div{
+  position: relative;
+margin-bottom: 1rem;
+}
+#gallery img{
+  vertical-align: bottom;
+}
+
+div #cards {
+display: flex;
+flex-direction: column;
+/* margin: 3rem; */
+}
+
+#cards img{
+  margin: 1rem auto;
+  padding: .5rem;
+}
+button{
+  width: 100%;
+  margin: 1rem auto;
+}
+

@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "playfairDR";
+  /* creation d'un alias/raccourci  */
+  src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+/* importation des fonts  */
+img, input{
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "playfairDR", serif;
+}
+/* Reset dimensions */
+
+/* Pour appeler l'id logo, j'utilise le sélécteur # = le nom logo  */
+#logo {
+  color: black;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 360;
+}
+/* Pour appeler un élément HTML dans un selecteur j'utilise son nom  */
+nav {
+  display: flex;
+  /* Pour gerer l'allignement vertical des enfants de ma div j'utilise align-items  */
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.596);
+  position: fixed;
+  /* le fixed permet de garder la barre de nav fix quand on scroll */
+  /* z-index: ; */
+  /* permet de superposer les layers mais ne fonctionne pas avec une position statique (par defaut) */
+  width: 100%;
+  height: 55px;
+  top: 0;
+}
+#titrec{
+  color: rgba(0, 0, 0, 0.699);
+  font-size: 1,7rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 15px;
+}
+
+#img-header {
+  background-image: url(../img/hamburger.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 55px;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+#about, #menu{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto ;
+  margin: 2rem auto
+}
+
+#menu{
+  flex-direction: row-reverse;
+}
+
+/* #main-img-ac{
+  width: 100%;
+} */
+
+#about div, #menu div{
+  /* border: 1px solid red; */
+  width: 47%;
+  
+}
+/* Pour appeller des elements enfants (et eux uniquement) à l'interieur du parent j'appelle en 1er le parent puis un espace puis ses enfants */
+
+#about span{
+  background-color: rgba(181, 179, 179, 0.212);
+}
+
+.titre1{
+ text-align: center;
+ letter-spacing: 5px;
+ margin: 2rem 0;
+ font-size: 2,6rem;
+ font-weight: 1000;
+}
+
+.titre2{
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 2rem 0;
+  font-size: 1rem;
+ }
+
+#about .firstchild{
+  font-weight: 900;
+  margin:  .5rem 0;
+  word-spacing: 0,7rem;
+
+}
+
+#about .secondchild{
+    margin:  .5rem 0;
+    word-spacing: 3px;
+    
+}
+
+#menu h2{
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+#menu h3,#menu p{
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+/* à fignoler */
+
+#contact{
+  width: 70%;
+  margin : auto;
+}
+
+#contact input{
+  border: none;
+  border-bottom: 0.5px solid black;
+  padding: .5rem;
+  margin: .5rem ;
+}
+#contact .send{
+  width: fit-content;
+  border: none;
+}
